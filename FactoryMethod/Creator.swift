@@ -9,18 +9,14 @@
 import UIKit
 
 protocol CreatorProtocol {
-    func create() -> Product
+    func factoryMethod() -> Product
 }
 
 extension CreatorProtocol {
-    func factoryMethod() -> Product {
-        return Product()
-    }
 }
 
 class Creator: NSObject, CreatorProtocol {
-    func create() -> Product {
-        let product = Product()
-        return product
+    func factoryMethod() -> Product {
+        return Product()
     }
 }

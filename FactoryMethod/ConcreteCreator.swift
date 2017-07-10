@@ -9,7 +9,7 @@
 import UIKit
 
 class ConcreteCreator: Creator {
-    func factoryMethod() -> Product {
+    override func factoryMethod() -> Product {
         return ConcreteProduct()
     }
 }

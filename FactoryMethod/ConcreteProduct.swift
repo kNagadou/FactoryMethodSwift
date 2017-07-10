@@ -10,11 +10,11 @@ import UIKit
 
 class ConcreteProduct: Product {
     
-    func method1() {
+    override func method1() {
         print("ConcreteProduct1")
     }
     
-    func method2() {
+    override func method2() {
         print("ConcreteProduct2")
     }
 }

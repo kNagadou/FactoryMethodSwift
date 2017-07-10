@@ -9,12 +9,15 @@
 import UIKit
 
 protocol ProductProtocol {
+    func method1()
+    func method2()
 }
 
 extension ProductProtocol {
-    func method1() { print("Product1") }
-    func method2() { print("Product2") }
+    
 }
 
 class Product: NSObject, ProductProtocol {
+    func method1() {}
+    func method2() {}
 }

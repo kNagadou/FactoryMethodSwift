@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     }
     
     func showFactoryMethod() {
-        let creator: ConcreteCreator = ConcreteCreator()
-        let product: ConcreteProduct = creator.factoryMethod() as! ConcreteProduct
+        let creator: Creator = ConcreteCreator()
+        let product: Product = creator.factoryMethod()
         
         product.method1()
         product.method2()
